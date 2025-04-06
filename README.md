@@ -1,27 +1,31 @@
 # HeroForge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
+## Goal:
+Build an Angular app where users can:
+1. View a list of heroes.
+2. Add/remove heroes from the squad.
+3. Assign/remove gear to heroes.
 
-## Development server
+## Requirements
+1. Hero List (Main Page)
+   - Display a list of heroes fetched from a mock API.
+   - Each hero has:
+     - Name
+     - Profession (e.g., Mage, Archer, Royal, Mystic)
+   - Each hero has an "Add to Squad" / "Remove from Squad" button.
+   - Squad limit: Max 3 heroes.
+   - A section above the list displays the current squad members.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+2. Gear Management (Hero Page)
+   - Clicking on a hero navigates to a hero details page. 
+   - On this page, users can:
+     - View the hero’s name, profession, and assigned gear.
+     - Assign gear from a predefined list (mocked from API).
+     - Limit: Each hero can have up to 3 gear items.
+     - Remove gear items if needed.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. Provided Setup (Mock API)\
+Several services are already provided. They are there to manage:
+   - heroes
+   - gear
+   - squad 
